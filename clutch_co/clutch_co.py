@@ -88,9 +88,6 @@ while next_button_enabled:
     # Increment the page number
     page += 1
 
-    if page == 10:
-        break
-
     # Check if there is a next page button and click it
     try:
         next_page = driver.find_element(By.XPATH, '//*[@id="providers"]/nav/ul/li[@class="page-item next"]/a').click()
